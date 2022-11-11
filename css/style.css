@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #403F4C;
+    color: #171D1C;
+}
+
+.main {
+    width: auto;
+    height: 100vh;
+}
+
+.title {
+    font-size: 1rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.numberGame {
+    background-color: #FEE440;
+    border-radius: 10px;
+    height: 90vh;
+    width: 90vw;
+    padding: 20px;
+}
+
+.display {
+    background-color: black;
+    border-radius: 10px;
+    color: aliceblue;
+    height: 35vh;
+    /* margin: 10px; */
+    width: 70vw;
+}
+
+input {
+    height: 40px;
+    text-align: center;
+    background-color: #18f614;
+    border-radius: 4px;
+    width: 70px;
+}
+
+input:hover {
+    background-color: #81f67f;
+}
+
+button {
+    background-color: #9B5DE5;
+    height: 50px;
+    width: 80px;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 85%;
+}
+
+.start {
+    background-color: #00F5D4;
+}
+
+.playAgain:hover {
+    background-color: #9549f2;
+    color: #171D1C;
+    box-shadow: 0 0 10px #a968f8;
+}
