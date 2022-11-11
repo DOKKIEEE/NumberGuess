@@ -6,7 +6,6 @@ let inputNum = document.querySelector("#inputNum");
 function generateNewNum() {
     // random number
     var randomNum = Math.ceil(Math.random()*10);
-    console.log(randomNum);
 
     generateBtn.setAttribute("disabled", "");
     inputNum.removeAttribute("disabled", "");
@@ -18,7 +17,6 @@ function generateNewNum() {
 
     function guessNum() {
         let inputNum = document.querySelector("#inputNum").value;
-        console.log(inputNum);
 
         let ansDisplay = document.querySelector("#ansDisplay");
         let options = document.querySelector("#options");
@@ -61,7 +59,6 @@ function generateNewNum() {
 
         var childNum = document.querySelector("#ansDisplay").childElementCount;
         var limit = 2;
-        console.log(childNum);
 
         function restartGame() {
             ansDisplay.removeChild(ansDisplay.lastElementChild);
@@ -72,10 +69,8 @@ function generateNewNum() {
         }
 
         if (randomNum != inputNum && randomNum > inputNum) {
-            console.log("wrong higher");
             ansDisplay.appendChild(wrongAnsHigher);
         } else if(randomNum != inputNum && randomNum < inputNum) {
-            console.log("wrong lower");
             ansDisplay.appendChild(wrongAnsLower);
         } else if (randomNum == inputNum) {
             console.log("correct")
