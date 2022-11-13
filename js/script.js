@@ -15,7 +15,7 @@ function generateNewNum() {
     guessBtn.addEventListener("click", guessNum);
     guessBtn.removeAttribute("disabled", "");
 
-    let gameStart = document.createElement("h3");
+    let gameStart = document.createElement("h1");
     gameStart.textContent = "Guess Now!";
     gameStart.classList = "gameStart";
 
