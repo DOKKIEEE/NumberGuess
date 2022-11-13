@@ -15,6 +15,12 @@ function generateNewNum() {
     guessBtn.addEventListener("click", guessNum);
     guessBtn.removeAttribute("disabled", "");
 
+    let gameStart = document.createElement("h3");
+    gameStart.textContent = "Guess Now!";
+    gameStart.classList = "gameStart";
+
+    ansDisplay.appendChild(gameStart);
+
     function guessNum() {
         let inputNum = document.querySelector("#inputNum").value;
 
@@ -59,6 +65,8 @@ function generateNewNum() {
 
         var childNum = document.querySelector("#ansDisplay").childElementCount;
         var limit = 2;
+
+        gameStart.remove();
 
         function restartGame() {
             ansDisplay.removeChild(ansDisplay.lastElementChild);
